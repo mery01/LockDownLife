@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="16dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/lay_add_reminder"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:layout_height="148dp">
+
+        <EditText
+            android:id="@+id/et_alarm_title"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="72dp"
+            android:hint="@string/et_alarm_title"
+            android:textSize="25dp"
+            android:lines="4"
+            android:minLines="4"
+            android:gravity="top|left"
+            android:textColor="@android:color/white"
+            android:scrollHorizontally="false"
+            android:textColorHint="@color/textColor"
+            android:inputType="textCapWords|textMultiLine"
+            android:layout_marginRight="16dp"
+            android:layout_height="140dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/lay_add_reminder"
+        android:background="@drawable/gradient" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/lay_add_reminder"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/details"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="72dp"
+                android:textColor="@color/textColor" />
+
+            <RelativeLayout
+                android:id="@+id/lay_date"
+                android:layout_width="match_parent"
+                android:onClick="SetDate"
+                android:clickable="true"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="72dp">
+
+                <ImageView
+                    android:id="@+id/iv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="32dp"
+                    android:src="@drawable/ic_date_range"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_date"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_alarm_date"
+                        android:textColor="@color/textColor"
+                        android:layout_width="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_alarm_date" />
+
+                    <TextView
+                        android:id="@+id/tv_set_alarm_date"
+                        android:layout_width="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/textColor"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:onClick="SetTime"
+                android:id="@+id/lay_time"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="72dp">
+
+                <ImageView
+                    android:id="@+id/iv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="32dp"
+                    android:src="@drawable/ic_timer"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_time"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_alarm_time"
+                        android:textColor="@color/textColor"
+                        android:layout_width="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_alarm_time" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/tv_set_alarm_time"
+                        android:textSize="15dp"
+                        android:textColor="@color/textColor"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/lay_repeat"
+                android:layout_height="72dp">
+
+                <ImageView
+                    android:id="@+id/iv_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="32dp"
+                    android:src="@drawable/ic_repeat"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_repeat"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_alarm_repeat"
+                        android:textColor="@color/textColor"
+                        android:layout_width="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_alarm_repeat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/tv_set_alarm_repeat"
+                        android:textSize="15dp"
+                        android:textColor="@color/textColor"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/switch_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:onClick="OnSwitchRepeat"
+                    android:checked="true"
+                    android:shadowColor="@color/colorMain"
+                    android:textOn="On"
+                    android:theme="@style/SCBSwitch"
+                    android:textOff="Off"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/lay_repeat_interval"
+                android:clickable="true"
+                android:onClick="SetRepeatInterval"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="72dp">
+
+                <ImageView
+                    android:id="@+id/iv_repeat_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="32dp"
+                    android:src="@drawable/ic_compare_arrows"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_repeat_interval"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_alarm_repeat_interval"
+                        android:textColor="@color/textColor"
+                        android:layout_width="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_alarm_repeat_interval" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/tv_set_alarm_repeat_interval"
+                        android:textSize="15dp"
+                        android:textColor="@color/textColor"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/lay_interval_type"
+                android:clickable="true"
+                android:onClick="SelectIntervalType"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="72dp">
+
+                <ImageView
+                    android:id="@+id/iv_interval_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="32dp"
+                    android:src="@drawable/ic_view_list"
+                    android:layout_centerVertical="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_interval_type"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_alarm_interval_type"
+                        android:textColor="@color/textColor"
+                        android:layout_width="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_alarm_interval_type" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/tv_set_alarm_interval_type"
+                        android:textSize="15dp"
+                        android:textColor="@color/textColor"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/float_but_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="NotificationsOff"
+        fab:fab_icon="@drawable/ic_notifications_off"
+        fab:fab_colorNormal="@color/colorMain"
+        fab:fab_colorPressed="@color/colorMain"
+        app:fab_size="normal"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="168dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"/>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/float_but_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="NotificationsOn"
+        fab:fab_icon="@drawable/ic_notifications_active"
+        fab:fab_colorNormal="@color/colorMain"
+        fab:fab_colorPressed="@color/colorMain"
+        app:fab_size="normal"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="168dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"/>
+
+</RelativeLayout>

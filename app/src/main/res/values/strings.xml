@@ -1,0 +1,347 @@
+<resources>
+    <string name="app_name">LockDownLife</string>
+
+    <!-- MANIFEST -->
+    <string name="title_activity_Main"> LockDownLife </string>
+    <string name="title_activity_Home"> Home </string>
+    <string name="title_activity_About"> About </string>
+    <string name="title_activity_Calendar"> CALENDARIO </string>
+
+    <string name="title_activity_add_event">EDITAR EVENTO</string>
+    <string name="title_activity_Exercise"> EJERCICIO </string>
+    <string name="title_activity_Exercise_videos"> VIDEO</string>
+
+    <string name="title_activity_Food"> RECETAS DE COCINA </string>
+    <string name="title_activity_food_link"> LINK RECETAS</string>
+    <string name="title_activity_add_recipe"> LISTA DE RECETAS</string>
+
+    <string name="title_activity_List"> LISTA DE TAREAS </string>
+    <string name="title_activity_Relax"> DESPEJA LA MENTE </string>
+    <string name="title_activity_Sleep"> ALARMAS </string>
+    <string name="title_activity_add_list">NUEVA TAREA</string>
+    <string name="title_activity_add_alarm">EDITAR ALARMA</string>
+    <string name="title_activity_pop_info_sleep">Info Sleep</string>
+    <string name="title_activity_day_calendar">EVENTOS</string>
+    <string name="title_activity_add_event_calendar"> NUEVO EVENTO</string>
+    <string name="title_activity_pop_info_calendar">Info Calendar</string>
+
+    <string name="title_activity_pop_info_food">Info Food</string>
+    <string name="title_activity_pop_info_exercise">Info Exercise</string>
+    <string name="title_activity_pop_info_relax">Info Relax</string>
+
+
+
+
+    <string name="title_activity_reminder"> RECORDATORIO </string>
+    <string name="title_reminder_receiver"> NOTIFICACIONES</string>
+    <string name="title_activity_edit_event"> EDIT EVENT</string>
+    <string name="title_activity_info_list"> Info List</string>
+
+
+    <!-- NAVIGATION -->
+    <string name="navigation_Home"> LockDownLife</string>
+    <string name="navigation_Close">Navigation Close</string>
+    <string name="navigation_Info">Navigation Info</string>
+
+
+    <!-- FRAGMENT HOME -->
+    <string name="button_sleep"> SUEÑO </string>
+    <string name="button_lista"> LISTA </string>
+    <string name="button_calendario"> CALENDARIO </string>
+    <string name="button_comida"> COMIDA </string>
+    <string name="button_ejercicio"> EJERCICIO </string>
+    <string name="button_descanso"> DESCANSO </string>
+
+    <!-- MENU -->
+    <string name="action_About"> About </string>
+    <string name="menu_Home"> Inicio </string>
+    <string name="menu_Close"> Salir </string>
+    <string name="menu_Info"> Información </string>
+
+    <!-- MENU_LIST -->
+    <string name="menu_list_title">Lista de Tareas</string>
+
+
+    <!-- NAVIGATION_HEADER_HOME -->
+    <string name="navigation_header_image"> Navigation Header Image </string>
+    <string name="navigation_header_title"> LockDownLife</string>
+    <string name="navigation_header_subtitle"> Una aplicación para estar en casa</string>
+
+    <!-- CLOSE FRAG -->
+    <string name="salir">Salir</string>
+
+    <!-- INFO FRAG -->
+    <string name="frag_rules_texto">
+        La aplicación consta de 6 actividades: \n\n
+
+        1- SUEÑO\n\n
+        ¡Ya no se necesita despertador! Esta actividad permite crear alarmas.Además, se puede incluir
+        un nombre de la alarma, fecha, hora y repetición (cada minuto, hora, día, semana y mes).\n\n
+
+        2- LISTA \n\n
+        ¿Quedará alguna tarea sin hacer? Esta lista de tareas está organizada según la fecha. Se organizan en tareas diarias,
+        tareas para el día posterior y tareas para próximos días.\n\n
+
+        3- CALENDARIO\n\n
+        ¿Teletrabajando? Un calendario que organiza todos los eventos necesarios para poder mantener un buen ritmo de trabajo.\n\n
+
+        4- COMIDA\n\n
+        ¿No se domina la cocina? Esta funcionalidad incluye una búsqueda de recetas.\n\n
+
+        5- EJERICIO\n\n
+        ¡Hay que mantenerse en forma!Esta funcionalidad incluye una rutina de ejercicios que se pueden realizar desde casa.
+        ¡Incluso existen vídeos que ayudan a realizar bien los ejercicios!\n\n
+
+        6- RELAX\n\n
+        ¿Un descanso? Esta funcionalidad incluye vídeos de meditación y música relajante para poder desconectar.\n\n
+
+        \n\n
+
+    </string>
+
+    <!-- LIST -->
+    <string name="lista_de_tareas">Lista de Tareas</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- add_modify_list -->
+    <string name="tv_et_add_list"> ¿ Qué estás planeando ?</string>
+    <string name="tv_set_list_date"> 18/10/2020</string>
+    <string name="tx_but_save"> GUARDAR</string>
+    <string name="tx_but_delete"> ELIMINAR</string>
+
+    <!-- pop_info_calendar -->
+    <string name="info_list">
+        ¡ATENCIÓN!
+        \n\n
+        ¡La gestión del tiempo es muy importante! Esta actividad puede ser una buena opción para crear una
+        lista de la compra (para no ir tanto al supermercado) e incluso para recordarnos ventilar el hogar y larvarnos las manos.
+        \n\n
+    </string>
+
+
+
+
+    <!-- SLEEP -->
+
+    <!-- menu_add_alarm -->
+    <string name="menu_item_delete">Delete Alarm</string>
+    <string name="menu_item_save">Save Alarm</string>
+
+    <!-- pop_info_sleep -->
+    <string name="info_sleep">
+        ¡ATENCIÓN!
+        \n\n
+        En tiempos de confinamiento, dormir bien es tan importante como los demás protocolos sanitarios. El descanso hace que tengamos un mejor sistema inmunológico y como defensa natural, reduce el riesgo de virus e infecciones.
+        \nLos expertos recomiendan dormir alrededor de 8 horas para disfrutar de un sueño reparador. </string>
+
+    <!-- sleep_content -->
+    <string name="tv_sleep_content_title"> TITULO </string>
+    <string name="tv_sleep_content_date_time"> DIA Y HORA </string>
+    <string name="tv_sleep_content_repeat"> REPETICIÓN </string>
+
+    <!-- menu_sleep -->
+    <string name="menu_sleep_title">INFO</string>
+
+    <!-- add_alarm_sleep -->
+    <string name="et_alarm_title">Insertar Título Alarma</string>
+    <string name="tv_alarm_date">Fecha</string>
+    <string name="tv_alarm_time">Hora</string>
+    <string name="tv_alarm_repeat">Repetición</string>
+    <string name="tv_alarm_repeat_interval">Intervalo Repetición</string>
+    <string name="tv_alarm_interval_type">Tipo de Intervalo</string>
+
+    <!-- Add Alarm -->
+    <string name="editor_activity_title_new_alarm">Añadir Detalles Alarma</string>
+    <string name="editor_activity_title_edit_alarm">Editar Detalles Alarma</string>
+    <string name="editor_delete_alarm_failed">Error al eliminar alarma</string>
+    <string name="editor_delete_alarm_successful">Alarma guardada</string>
+    <string name="editor_insert_reminder_failed">Error al guardar alarma</string>
+    <string name="editor_insert_reminder_successful">Alarma guadada</string>
+    <string name="editor_update_reminder_failed">Error al actualizar alarma</string>
+    <string name="editor_update_reminder_successful">Alarma actualizada</string>
+    <string name="unsaved_changes_dialog_msg">¿Descartar los cambios y dejar de editar?</string>
+    <string name="discard">Descartar</string>
+    <string name="delete">ELIMINAR</string>
+    <string name="keep_editing">Seguir Editando</string>
+    <string name="delete_dialog_msg">¿Eliminar esta alarma?</string>
+    <string name="cancel">CANCELAR</string>
+
+    <!-- FOOD -->
+    <string name="et_ingredients">INGREDIENTES</string>
+    <string name="et_search">BUSCAR PALABRAS CLAVE</string>
+
+    <!-- MENU_FOOD -->
+    <string name="menu_food_title">RECETAS DE COCINA</string>
+
+    <!-- POP_INFO_FOOD -->
+    <string name="info_food">
+        ¡ATENCIÓN!
+        \n\n
+        ¿No sabes que cocinar en cass? Esta funcionalidad te permite buscar recetas sencillas. Tan
+        solo tienes que incluir los ingredientes y algún tipo de palabra clave. ¡OjO funciona en inglés!
+        \n\n
+    </string>
+
+    <!-- EXERCISE -->
+    <string name="day1">Monday</string>
+    <string name="day2">Tuesday</string>
+    <string name="day3">Wednesday</string>
+    <string name="day4">Thursday</string>
+    <string name="day5">Friday</string>
+    <string name="day6">Saturday</string>
+    <string name="day7">Sunday</string>
+
+    <string-array name="name">
+        <item>1.SENTADILLAS</item>
+        <item>2.PLANCHA</item>
+        <item>3.ABDOMINALES (CRUNCHES)</item>
+        <item>4.SALTOS CON SEPARACIÓN DE LAS PIERNAS</item>
+        <item>5.LUNGES </item>
+        <item>6.SENTARSE EN LA PARED</item>
+        <item>7.ABDOMINALES (SIT UPS)</item>
+        <item>8.TALONES AL CULO</item>
+        <item>9.FLEXIONES</item>
+    </string-array>
+
+    <string-array name="monday_description">
+        <item> 20 repeticiones</item>
+        <item>15 segundos</item>
+        <item>25 repeticiones</item>
+        <item>35 repeticiones</item>
+        <item>15 repeticiones</item>
+        <item>25 segundos</item>
+        <item>10 repeticiones</item>
+        <item>10 repeticiones</item>
+        <item>5 repeticiones</item>
+    </string-array>
+
+    <string-array name="tuesday_description">
+        <item>10 repeticiones</item>
+        <item>30 segundos</item>
+        <item>20 repeticiones</item>
+        <item>50 repeticiones</item>
+        <item>25 repeticiones</item>
+        <item>35 segundos</item>
+        <item>35 repeticiones</item>
+        <item>20 repeticiones</item>
+        <item>10 repeticiones</item>
+    </string-array>
+
+    <string-array name="wednesday_description">
+        <item>15 repeticiones</item>
+        <item>40 segundos</item>
+        <item>30 repeticiones</item>
+        <item>50 repeticiones</item>
+        <item>25 repeticiones</item>
+        <item>35 segundos</item>
+        <item>30 repeticiones</item>
+        <item>25 repeticiones</item>
+        <item>10 repeticiones</item>
+    </string-array>
+
+    <string-array name="friday_description">
+        <item>35 repeticiones</item>
+        <item>30 segundos</item>
+        <item>20 repeticiones</item>
+        <item>25 repeticiones</item>
+        <item>15 repeticiones</item>
+        <item>60 segundos</item>
+        <item>50 repeticiones</item>
+        <item>35 repeticiones</item>
+        <item>20 repeticiones</item>
+    </string-array>
+
+    <string-array name="saturday_description">
+        <item>25 repeticiones</item>
+        <item>60 segundos</item>
+        <item>30 repeticiones</item>
+        <item>55 repeticiones</item>
+        <item>60 repeticiones</item>
+        <item>45 segundos</item>
+        <item>40 repeticiones</item>
+        <item>50 repeticiones</item>
+        <item>30 repeticiones</item>
+    </string-array>
+
+    <string-array name="rest_name">
+    <item>Rest</item>
+    </string-array>
+
+    <string-array name="rest_desc">
+        <item> </item>
+    </string-array>
+
+
+    <!-- menu_exercise -->
+    <string name="menu_exercise_title"> EJERCICIO</string>
+
+    <!-- POP_INFO_FOOD -->
+    <string name="info_exercise">
+        ¡ATENCIÓN!
+        \n\n
+        Tanto tiempo sin ir al gimnasio debilita a cualquiera. ¡Vuelve a ponerte en forma con esta rutina de ejercicios que puedes hacer desde casa!
+        \n\n
+    </string>
+
+    <!-- CALENDAR -->
+    <!-- add_event_calendar -->
+    <string name="et_event_title">Insertar Título Evento</string>
+    <string name="tv_event_start_date">Fecha Inicio</string>
+    <string name="tv_event_start_time">Hora Inicio</string>
+    <string name="tv_event_end_date">Fecha Fin</string>
+    <string name="tv_event_end_time">Hora Fin</string>
+    <string name="tv_event_repeat">Repetición</string>
+    <string name="tv_event_repeat_interval">Intervalo Repetición</string>
+    <string name="tv_event_interval_type">Tipo de Intervalo</string>
+    <string name="tv_event_note">Nota</string>
+
+
+    <!-- Add Event -->
+    <string name="editor_activity_title_new_event">Añadir Detalles Evento</string>
+    <string name="editor_activity_title_edit_event">Editar Detalles Evento</string>
+    <string name="editor_delete_event_failed">Error al eliminar evento</string>
+    <string name="editor_delete_event_successful">Evento guardad</string>
+    <string name="editor_insert_event_failed">Error al guardar evento</string>
+    <string name="editor_insert_event_successful">Evento guadado</string>
+    <string name="editor_update_event_failed">Error al actualizar evento</string>
+    <string name="editor_update_event_successful">Evento actualizado</string>
+
+    <!-- MENU_CALENDAR -->
+    <string name="menu_calendar_title">CALENDARIO</string>
+
+    <!-- pop_info_calendar -->
+    <string name="info_calendar">
+        ¡ATENCIÓN!
+        \n\n
+        ¿Teletrabajando? Este calendario te permite organizar tus eventos para poder ser más producturo durante este trabajo hogareño.
+        \n\n
+    </string>
+
+    <!-- MENU_RELAX -->
+    <string name="menu_relax_title">DESCANSO</string>
+
+    <!-- pop_info_relax -->
+    <string name="info_relax">
+        ¡ATENCIÓN!
+        \n\n
+        ¿Necesitas un descanso ? Esta actividad te ofrece vídeos para despejar la mente.
+        \n\n
+    </string>
+
+    <!-- ABOUT -->
+    <string name="et_auth_name"> MARÍA ALONSO ARROYO</string>
+    <string name="et_description_auth"> Estudiante del Grado de Sonido e Imagen. </string>
+</resources>
